@@ -1,2 +1,2 @@
-# mlstack
-ML algorithm toolkit
+# MLstack
+ML toolkit & Algorithms library
