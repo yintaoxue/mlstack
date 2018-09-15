@@ -25,7 +25,7 @@ def get_precision_recall_by_threshold(threshold, y_test, y_score):
 
     prt = pd.concat([pdf, rdf, tdf], axis=1)
 
-    prt1 = prt.loc[prt['thresholds'] >= thresholds, :].iloc[0, :]
+    prt1 = prt.loc[prt['thresholds'] >= threshold, :].iloc[0, :]
     p = prt1[0]
     r = prt1[1]
     t = prt1[2]
