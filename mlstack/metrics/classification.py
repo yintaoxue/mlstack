@@ -7,6 +7,12 @@ from sklearn import metrics
 import numpy as np
 import pandas as pd
 
+y_true = [0, 1, 0, 1]
+y_pred = [1, 1, 1, 0]
+
+tn, fp, fn, tp = metrics.confusion_matrix(y_true, y_pred).ravel()
+
+
 def get_precision_recall_by_threshold(threshold, y_test, y_score):
     """
     get precision and recall at given threshold
